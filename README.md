@@ -40,6 +40,12 @@ import seaborn as sns
 import pandas as pd
 ```
 
+## Build Client-Side App
+```shell
+shiny static-assets remove
+shinylive export penguins docs
+py -m http.server --directory docs --bind localhost 8008
+
 ## Git Add and Commit
 ``` shell
 git add .
